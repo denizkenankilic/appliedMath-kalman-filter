@@ -1,4 +1,4 @@
-function [xpred, Ppred] = predict(x, P, F, Q)
+function [xpred, Ppred] = predict(x, P, F, QQ)
 
 xpred = F * x;
-Ppred = F * P * F' + Q;
+Ppred = F * P * F' + QQ;
